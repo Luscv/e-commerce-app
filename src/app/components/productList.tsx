@@ -19,7 +19,6 @@ export const ProductList = () => {
 
     return (
         <div>
-            Product List
             <div className="flex flex-wrap gap-6">
                 {
                     products.map((product) => (
