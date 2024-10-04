@@ -24,7 +24,7 @@ export async function generateStaticParams() {
         params: { id: product.id }
     }))
 }
-export default async function ProductDetails({params}: ProductProps) {
+export default async function ProductDetailsServer({params}: ProductProps) {
     const {id} = params
     console.log(id)
     const productDetail = await fetchData(id)

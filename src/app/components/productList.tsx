@@ -22,7 +22,7 @@ export const ProductList = () => {
             <div className="flex flex-wrap gap-6">
                 {
                     products.map((product) => (
-                        <ProductCard key={product.id} params={product}/>
+                        <ProductCard key={product.id} product={product}/>
                     ))
                 }
             </div>
